@@ -17,5 +17,10 @@ public class Main {
                 System.out.println(startingNumber);
         }
         }
+        int countDown = 10;
+        while (countDown >= -10) {
+            System.out.println("Обратный отсчет: " + countDown);
+            countDown --;
+        }
     }
 }
