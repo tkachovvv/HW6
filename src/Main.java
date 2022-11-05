@@ -33,7 +33,19 @@ public class Main {
         for (int geometricalProgression = 1; geometricalProgression <= 512; geometricalProgression = geometricalProgression *2) {
             System.out.println(geometricalProgression);
         }
-
+        int installment = 29000;
+        int total = 0;
+        for (int month = 1; month <= 12; month++) {
+            total = total + installment;
+            System.out.println("Месяц " + month + " Итого " + total);
+        }
+        int installmentPlan = 29000;
+        int totalSavings = 0;
+        for (int month = 1; month <= 12; month++) {
+            totalSavings = totalSavings + (installmentPlan / 100) * 12;
+            totalSavings = totalSavings + installmentPlan;
+            System.out.println("Месяц " + month + " Итого " + totalSavings);
+        }
     }
 }
 
